@@ -49,3 +49,9 @@ INSERT INTO `table` (id, name) VALUES (1, 'A3');
 INSERT INTO `table` (id, name) VALUES (2, 'B3');
 INSERT INTO `table` (id, name) VALUES (3, 'C3');
 ```
+
+## Generate POCOs
+```
+Install-Package MySql.Data.EntityFrameworkCore -Version 8.0.13
+Scaffold-DbContext "server=127.0.0.1;port=3306;user=root;password=123456;database=test" MySql.Data.EntityFrameworkCore -OutputDir DataAccess -f
+```
